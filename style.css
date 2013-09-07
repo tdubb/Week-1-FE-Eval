@@ -1,11 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700);
 
-/* ============ MAIN LAYOUT STUFFS =============== */
+/* ============ MAIN LAYOUT STUFF =============== */
 
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 10px;
 	color: #939393;
+	font-weight: 400;
 	margin: 0;
     padding: 0;
     border: 0;
@@ -39,7 +40,6 @@ header, section.hero-unit, section.features, footer  {
 
 .content-wrapper {
 	width: 1000px;
-	background: yellow;
 	margin: 0 auto;
 }
 
@@ -49,21 +49,26 @@ h3 {
 	color: #000;
 	font-weight: 100;
 }
-.bold { font-weight: bold;}
-.orange {color: #d06a53;}
-.center {text-align: center;}
+.bold { font-weight: bold; font-weight: 700; }
+.bolder { font-weight: 800; }
+.orange { color: #d06a53; }
+.center { text-align: center; }
 
 .icon-white {
 	color: #fff;
 }
 
-/* ============ HEADER STUFFS =============== */
+/* ============ HEADER STUFF =============== */
 header {background: #fff;}
 header div.content-wrapper {background: #fff; padding-bottom: 10px;}
 
 #main-logo {
 	float: left;
-	margin: 20px 258px 0px 15px;
+	margin: 20px 290px 0px 15px;
+	cursor: pointer;
+}
+#main-logo img {
+	width: 110px;
 }
 
 nav.top-nav{
@@ -79,7 +84,7 @@ nav.top-nav ul {
 nav.top-nav ul li a {
 	float: left;
 	display: inline-block;
-	padding: 10px 20px 10px 20px;
+	padding: 7px 12px;
 	margin-left: 10px;
 	-webkit-border-radius: 7px;
     border-radius: 7px;
@@ -89,25 +94,29 @@ nav.top-nav ul li a:hover {
 	background: #d06a53;
 	color: #ffffff;
 }
-nav.top-nav ul li a.arrow:after {
-	content: ' ⋁';
+
+nav.top-nav ul li a:first-child i {
+	margin-right: 3px;
+}
+nav.top-nav ul li a i {
+	margin-left: 5px;
 }
 
-/* ============ HERO UNIT STUFFS =============== */
+/* ============ HERO UNIT STUFF =============== */
 
 section.hero-unit {background: transparent url(background.jpg) no-repeat;}
-section.hero-unit div.content-wrapper {background: transparent; padding: 70px 0 0 0;}
+section.hero-unit div.content-wrapper { padding: 70px 0 0 0;}
 
 section.hero-unit div.main-image {
 	float: left;
 	margin: 0 0 0 80px;
 }
 section.hero-unit div.main-image img {
-	width: 300px;
+	width: 420px;
 }
 
 .subscribe-form-wrapper {
-	width: 350px;
+	width: 395px;
 	float: left;
 }
 
@@ -115,19 +124,21 @@ section.hero-unit div.main-image img {
 	background: #d06a53;
 	color: #ffffff;
 	border: 0;
-	padding: 10px;
+	padding: 8px 10px;
 	-webkit-border-radius: 0px 5px 5px 0px;
     border-radius: 0px 5px 5px 0px;
     margin: 0 0 0 -3px;
+    font-size: 14px;
 }
 .subscribe-form-wrapper button:hover {
 	cursor: pointer;
+	background: #eb694c;
 }
  
 .subscribe-form-wrapper input[type="text"] {
 	border: 1px solid #ccc;
 	margin: 0;
-	padding: 0;
+	padding: 0 10px;
 	width: 200px;
 	height: 34px;
 	-webkit-border-radius: 5px 0px 0px 5px;
@@ -136,13 +147,13 @@ section.hero-unit div.main-image img {
 }
 
 
-/* ============ FEATURES STUFFS =============== */
+/* ============ FEATURES STUFF =============== */
 
 section.features {
 	background: #fff;
 }
 section.features div.content-wrapper {
-	background: #fff;
+	background: transparent;
 	border-bottom: 1px solid #ccc;
 	padding: 40px 0 180px 0; /* there has to be a better way to do this */
 }
@@ -174,16 +185,30 @@ section.features a.feature-link:before {content: "Learn More";}
 
 
 
-/* ============ Footer STUFFS =============== */
-
+/* ============ Footer STUFF =============== */
 footer {
 	background: #fff;
+	padding-top: 15px;
 }
 footer div.content-wrapper {
 	background: #fff;
 }
 
+/* ============ bottom right orange help box =============== */
 
+#help-box {
+	bottom: 5px;
+	right: 0;
+	width: 50px;
+	height: 40px;
+	background: #d06a53;
+	position: absolute;
+	padding-top: 10px;
+	cursor: pointer;
+}
+#help-box i {
+	margin: 15px 0 0 15px;
+}
 
 
 
